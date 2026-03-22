@@ -28,7 +28,6 @@ ol {
 }
 
 .page {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +42,7 @@ ol {
 
 .content {
   display: flex;
-  flex: 0 0 1147px;
+  flex: 0 0 1140px;
   align-items: flex-end;
   gap: 30px;
 }
@@ -212,7 +211,6 @@ ol {
 /* Заголовок */
 
 .title {
-  padding-left: 3px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -231,7 +229,6 @@ ol {
   flex-direction: column;
   gap: 30px;
   height: 298px;
-  padding: 3px;
   overflow-y: auto;
 }
 
@@ -280,11 +277,12 @@ ol {
   flex-grow: 1;
   min-width: 0;
   max-width: 390px;
+  padding-top: 2px;
 }
 
 .content__video-card-title {
   max-width: 196px;
-  padding-bottom: 6px;
+  margin-bottom: 6px;
   overflow: hidden;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
