@@ -43,9 +43,8 @@ ol {
 
 .content {
   display: flex;
-  flex: 0 0 1140px;
+  flex: 0 0 1147px;
   gap: 30px;
-  flex-direction: row;
   align-items: flex-end;
 }
 
@@ -172,8 +171,8 @@ ol {
   border-color: rgba(255, 255, 255, 1);
   appearance: none;
   width: 225px;
+  height: 27px;
   
-
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -205,8 +204,11 @@ ol {
 /* Правый блок */
 
 .content__details {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
+  gap: 23px;
 }
 
 /* Заголовок */ 
@@ -217,21 +219,18 @@ ol {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 94%;
+  padding-left: 3px;
 }
 
 .content__accent {
   color: rgba(84, 80, 80, 1);
 }
 
-.offset__bottom {
-  margin-bottom: 20px;
-}
-
 /* Карточки */
 
 .content__list-container {
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -247,7 +246,6 @@ ol {
 .content__list-item {
   padding-left: 3px;
   padding-right: 3px;
-  padding-top: 3px;
 }
 
 .content__card-link {
@@ -292,9 +290,11 @@ ol {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
+  padding-bottom: 6px;
   max-width: 196px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
@@ -303,7 +303,7 @@ ol {
   font-weight: 400;
   line-height: 16.2px;
   display: -webkit-box;
-  -webkit-line-clamp: 3;         /* Количество строк перед многоточием */
+  -webkit-line-clamp: 4;         /* Количество строк перед многоточием */
   -webkit-box-orient: vertical;  
   overflow: hidden; 
 }
@@ -316,7 +316,7 @@ ol {
 .content__video-card-thumbnail {
   height: 103px;
   width: 194px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: right;
 }
 
