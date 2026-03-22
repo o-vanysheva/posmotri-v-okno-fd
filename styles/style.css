@@ -68,8 +68,6 @@ ol {
   font-weight: 700;
   font-style: normal;
   padding-block: 5px;
-  /* padding-top: 6px;
-  padding-bottom: 6px; */
   border: 1px solid #fff;
   cursor: pointer;
 }
@@ -127,23 +125,22 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
   cursor: pointer;
-  position: relative;
 }
 
 .search-form__pseudo-checkbox::after {
   content: "";
-  position: absolute;
   top: 1px;
   left: 1px;
   width: 15px;
   height: 15px;
   background-color: #fff; 
   opacity: 0;
+  margin: auto;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -294,10 +291,10 @@ ol {
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;         /* Количество строк перед многоточием */
-  -webkit-box-orient: vertical;  
-  overflow: hidden; 
+  line-height: 1;
+  max-width: 196px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
